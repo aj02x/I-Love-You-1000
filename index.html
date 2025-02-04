@@ -4,43 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To My Forever Valentine 💌</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="title">
+    <!-- Title and First Click Here -->
+    <div class="title" id="titleSection">
         <h1>To My Forever Valentine 💌</h1>
-        <button onclick="showGIFs(1)" class="cute-button">Click Here</button> <!-- Button to show first GIF -->
+        <button onclick="showGIFs(1)" class="cute-button" id="firstClickButton">Click Here 💖</button> <!-- Button to show first GIF -->
     </div>
 
     <div class="content">
         <!-- GIF Section 1 -->
-        <div id="gifSection1" class="content-item gif-section">
+        <div id="gifSection1" class="content-item gif-section" style="display:none;">
             <div class="gif-container">
                 <img src="gifs/videoplayback-ezgif.com-video-to-gif-converter.gif" alt="Cute Video GIF" width="400" height="700">
             </div>
-            <button onclick="showGIFs(2)" class="cute-button">Click Here Next</button> <!-- Button to show second GIF -->
+            <button onclick="showGIFs(2)" class="cute-button">Click Here Next 💌</button> <!-- Button to show second GIF -->
         </div>
 
         <!-- GIF Section 2 -->
-        <div id="gifSection2" class="content-item gif-section">
+        <div id="gifSection2" class="content-item gif-section" style="display:none;">
             <div class="gif-container">
                 <img src="gifs/1-ezgif.com-video-to-gif-converter.gif" alt="Cute Video GIF 2" width="400" height="700">
             </div>
-            <button onclick="showGIFs(3)" class="cute-button">Click Here Next</button> <!-- Button to show third GIF -->
+            <button onclick="showGIFs(3)" class="cute-button">Click Here Next 💘</button> <!-- Button to show third GIF -->
         </div>
 
         <!-- GIF Section 3 -->
-        <div id="gifSection3" class="content-item gif-section">
+        <div id="gifSection3" class="content-item gif-section" style="display:none;">
             <div class="gif-container">
                 <img src="gifs/Mycomfortshortsmilkmochabearanimationbearsmilkmochamilkandmochacute-ezgif.com-video-to-gif-converter.gif" alt="Cute Video GIF 3" width="400" height="700">
             </div>
-            <button onclick="showLetter()" class="cute-button">Click Here Next</button> <!-- Button to show the letter -->
+            <button onclick="showLetter()" class="cute-button">Click Here Next ❤️</button> <!-- Button to show the letter -->
         </div>
 
         <!-- Letter Section -->
-        <div id="letter" class="content-item letter-style">
+        <div id="letter" class="content-item letter-style" style="display:none;">
             <p>Dear Love,</p>
             <p>Every day I spend with you reminds me just how incredibly lucky I am. You make everything feel brighter and more beautiful, just by being you. Whether it's a simple laugh we share, a quiet moment together, or even the challenges we face side by side, every single moment with you means the world to me.</p>
             <p>When I look at you, I see someone who makes my heart feel full, someone who knows me better than anyone else and loves me anyway. Your kindness, your smile, your warmth—they all make me feel so safe and happy. You make life more colorful, and you help me see the good in everything, even when things aren’t perfect.</p>
@@ -49,8 +50,23 @@
             <p>So, on this special day, I just want to say from the bottom of my heart—Happy Valentine’s Day, my love! I love you more than words could ever truly capture. Thank you for being everything I never knew I needed, and for loving me the way you do. You make my life better just by being in it, and I’m so grateful for you.</p>
             <p>I miss you more than you know, and I can’t wait to be with you again soon. Until then, know that I’m thinking of you always. I love you so much and I hope you know it.</p>
             <p>- Jhay 💖</p>
+
+            <!-- Button to show the final Valentine's message -->
+            <button onclick="showValentineMessage()" class="cute-button">Click Here 💖</button> <!-- Button for Valentine's Message -->
+        </div>
+
+        <!-- Valentine's Message Section -->
+        <div id="valentineMessage" class="content-item valentine-message" style="display:none;">
+            <h2>Happy Valentines My Love 💖</h2>
+            <div class="valentine-image">
+                <img src="gifs/a62ceaa2ee8134bfd980713bba902802.jpg" alt="Animated Woman Holding Flowers" width="200" height="300">
+            </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
     <script src="script.js"></script>
 </body>
