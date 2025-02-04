@@ -1,0 +1,89 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Title Styling */
+.title h1 {
+    color: #0077b6;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Cute Button Styling */
+.cute-button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #ff66b2; /* Cute pink color */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+/* Button Hover Effect */
+.cute-button:hover {
+    background-color: #ff3385; /* Slightly darker pink on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Content Styling (Initially Hidden) */
+.content-item {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Letter Styling */
+#letter {
+    text-align: left; /* Default alignment for the letter */
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f1f8ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* GIF Container Styling */
+.gif-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* GIF Styling */
+.gif-container img {
+    width: 400px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* GIF Hover Effect */
+.gif-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Fade In Animation for the Content */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
